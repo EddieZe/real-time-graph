@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.row {
+    margin: 0 3rem;
+}
+
+label, select{
+    line-height: 3rem;
+    margin-right: 1rem;
+}
+
+#graph_container{
+    margin: 0 5rem!important;
+}
+.custom-select{
+    background: none;
+    border-radius: 5px!important;
+    margin-top: 0.4rem;
+}
+
+span.status {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+
+}
+
+span.status.connected {
+    background-color: green;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Realtime graph update example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="src/app.js"></script>
+</head>
+<body>
+<h1>Realtime graph update example</h1>
+<div class="row">
+  <div class="col-sm-3">
+    <label class="input-text">Status:</label>
+    <span class="status"></span>
+  </div>
+  <div class="input-group mb-3 col-sm-3">
+    <div class="input-group-prepend">
+      <label class="input-text" for="inputGroupSelect01">Options:</label>
+    </div>
+    <select class="custom-select" id="setInterval">
+      <option value=1000>1 Second</option>
+      <option value=5000>5 Seconds</option>
+      <option value=10000 selected>10 Seconds</option>
+      <option value=30000>30 Seconds</option>
+      <option value=60000>1 Min</option>
+    </select>
+  </div>
+</div>
+
+  <div id="graph_container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+</body>
+</html>
